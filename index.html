@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CLINIC NAME — Physiotherapy & Rehabilitation</title>
+  <meta name="description" content="CLINIC NAME — Expert physiotherapy, manual therapy, electrotherapy. Book by WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Clinic Logo" class="logo" />
+        <div>
+          <h1>CLINIC NAME</h1>
+          <p class="tag">Advanced Physiotherapy & Rehabilitation</p>
+        </div>
+      </div>
+      <nav class="top-cta">
+        <a href="tel:+919876543210" class="call">Call</a>
+        <a href="https://wa.me/919876543210?text=Hi%20I%20want%20an%20appointment" class="whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>Recover Faster. Move Better.</h2>
+        <p>Expert physiotherapy by MPT qualified physiotherapists. Personalized plans, evidence-based treatments.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20book%20an%20appointment" class="btn">Book on WhatsApp</a>
+          <a href="#services" class="btn ghost">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/clinic-hero.jpg" alt="Clinic image" />
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="container services">
+    <h3>Our Services</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Back & Neck Pain</h4>
+        <p>Postural correction, manual therapy, exercise rehab for long-term relief.</p>
+      </div>
+      <div class="card">
+        <h4>Post-Op Rehabilitation</h4>
+        <p>Knee, shoulder and other post-surgical rehab to restore function and mobility.</p>
+      </div>
+      <div class="card">
+        <h4>Pain Management</h4>
+        <p>Electrotherapy (IFT, TENS, US), laser, and tailored exercise programs.</p>
+      </div>
+      <div class="card">
+        <h4>Sports Injury</h4>
+        <p>Assessment, load management and return-to-sport programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container about">
+    <h3>About the Physiotherapists</h3>
+    <div class="profile-row">
+      <div class="profile">
+        <img src="assets/physio1.jpg" alt="Physio 1" />
+        <h4>Dr. Sister Name, MPT</h4>
+        <p>Specialist in musculoskeletal rehabilitation with X years experience.</p>
+      </div>
+      <div class="profile">
+        <img src="assets/physio2.jpg" alt="Physio 2" />
+        <h4>Dr. Friend Name, MPT</h4>
+        <p>Expert in post-op rehab, sports injuries and manual therapy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container contact">
+    <h3>Contact & Location</h3>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>Clinic Hours</h4>
+        <p>Mon–Sat: 9:00 AM – 6:00 PM<br />Sun: Closed</p>
+        <h4>Phone & WhatsApp</h4>
+        <p><a href="tel:+919876543210">+91 98765 43210</a><br />
+           <a href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20book%20an%20appointment" target="_blank">Message on WhatsApp</a></p>
+      </div>
+      <div class="contact-card map">
+        <h4>Location</h4>
+        <!-- Replace src with Google Maps embed iframe from your clinic location -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!..." 
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> CLINIC NAME — All rights reserved.</p>
+      <p><small>Designed for small clinics · Simple booking via WhatsApp</small></p>
+    </div>
+  </footer>
+
+  <script>
+    // auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
