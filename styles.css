@@ -1,0 +1,47 @@
+:root{
+  --accent:#0f9d8e;
+  --dark:#1b1b1b;
+  --muted:#666;
+  --maxw:1100px;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--dark);line-height:1.5}
+.container{max-width:var(--maxw);margin:0 auto;padding:18px}
+.site-header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:20}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:56px;height:56px;object-fit:cover;border-radius:8px}
+.tag{margin:0;color:var(--muted);font-size:14px}
+.top-cta a{margin-left:8px;padding:8px 12px;border-radius:6px;text-decoration:none;color:#fff;background:var(--accent)}
+.top-cta .call{background:#2772ff}
+
+.hero{background:#f7fffd;padding:28px 0}
+.hero-inner{display:flex;gap:20px;align-items:center}
+.hero-text{flex:1}
+.hero-image img{width:320px;max-width:100%;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+h1,h2,h3,h4{margin:0 0 8px 0}
+h2{font-size:28px;color:var(--dark)}
+p{margin:0 0 12px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;color:#fff;background:var(--accent);margin-right:8px}
+.ghost{background:transparent;color:var(--accent);border:1px solid rgba(15,157,142,0.12)}
+
+.services .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+.card{background:#fff;padding:16px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+.profile-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.profile{flex:1;min-width:220px;background:#fff;padding:14px;border-radius:8px;display:flex;gap:12px;align-items:center}
+.profile img{width:72px;height:72px;border-radius:8px;object-fit:cover}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact-card{background:#fff;padding:16px;border-radius:8px}
+.map iframe{border-radius:8px}
+
+.site-footer{padding:20px 0;text-align:center;color:var(--muted);border-top:1px solid #f0f0f0;margin-top:30px}
+
+/* responsive */
+@media(max-width:880px){
+  .hero-inner{flex-direction:column-reverse}
+  .header-inner{flex-direction:column;gap:10px;align-items:flex-start}
+  .contact-grid{grid-template-columns:1fr}
+  .profile-row{flex-direction:column}
+}
